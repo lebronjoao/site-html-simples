@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alfabetização Infantil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Modal de Boas-vindas -->
+  <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="welcomeModalLabel">Bem-vindo!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Olá! Explore o mundo da alfabetização de forma divertida. Clique nas atividades para começar!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Vamos lá!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Alfabetização</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#atividades">Atividades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#historias">Histórias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <a href="https://unifacisa.edu.br/" target="__blank"><img class="logo-unifacisa" src="midias/Unifacisa-Marca-Large-1.png" width="150px" alt=""></a>
+      <a href="https://www.ipencb.com.br/" target="__blank"> <img class="logo-ipencb" src="https://www.ipencb.com.br/midias/2020/08/logo_ipen20c.png" width="150 px" alt=""></a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-primary text-white text-center py-5">
+    <h1>Bem-vindo ao Mundo da Alfabetização</h1>
+    <p>Aprenda brincando com atividades e histórias.</p>
+  </header>
+
+  <!-- Seção de Atividades -->
+  <section id="atividades" class="container my-5">
+    <h2 class="text-center">Atividades Interativas</h2>
+    <div class="d-flex flex-wrap justify-content-center">
+      <div class="col-md-6">
+
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Clique na Letra Correta</h5>
+            <p class="card-text">Escolha a letra inicial da palavra abaixo:</p>
+            <p class="fw-bold fs-4" id="palavra">Gato</p>
+            <button class="btn btn-secondary letra-btnGato">G</button>
+            <button class="btn btn-secondary letra-btnGato">P</button>
+            <button class="btn btn-secondary letra-btnGato">T</button>
+            <p id="feedback" class="mt-3"></p>
+          </div>
+        </div>
+
+        <!-- <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Clique na Letra Correta</h5>
+            <p class="card-text">Escolha a letra inicial da palavra abaixo:</p>
+            <p class="fw-bold fs-4" id="palavra">Cachorro</p>
+            <button class="btn btn-secondary letra-btnCachorro">B</button>
+            <button class="btn btn-secondary letra-btn">F</button>
+            <button class="btn btn-secondary letra-btn">C</button>
+            <p id="feedback" class="mt-3"></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Clique na Letra Correta</h5>
+            <p class="card-text">Escolha a letra inicial da palavra abaixo:</p>
+            <p class="fw-bold fs-4" id="palavra">Gato</p>
+            <button class="btn btn-secondary letra-btn">G</button>
+            <button class="btn btn-secondary letra-btn">P</button>
+            <button class="btn btn-secondary letra-btn">T</button>
+            <p id="feedback" class="mt-3"></p>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Histórias -->
+  <section id="historias" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center">Histórias Infantis</h2>
+      <p>Explore histórias curtas e divertidas para incentivar a leitura.</p>
+        <div class="row">
+           <div class="card" style="width: 18rem;">
+            <img src="https://cdn.pensador.com/img/imagens/ch/ap/chapeuzinho_c.jpg?auto_optimize=low&width=655" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Chapeuzinho Vermelho</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">5 min. de leitura <br> indicado para +5 anos</h6>
+              <p class="card-text">A história de uma menininha que acaba desobedecendo a mãe e seguindo o conselho de um lobo muito malvado para ir à casa de sua vó.</p>
+              <a href="historia_chaoeuzinho_vermelho.html" class="btn btn-primary">Leia completo</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="https://cdn.pensador.com/img/imagens/es/tr/estreladedinheiro.jpg?auto_optimize=low&width=655" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Estrela de Dinheiro</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">3 min. de leitura <br> indicado para 3+ anos</h6>
+              <p class="card-text">A história de uma menininha generosa que vai aprender que a caridade e a gentileza são valores importantes na vida.</p>
+              <a href="historia_estrelas_de_dinheiro.html" class="btn btn-primary">Leia completo</a>
+            </div>
+            </div>
+
+
+        </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contato" class="bg-dark text-white text-center py-3">
+    <p>Contato: contato@alfabetizacao.com</p>
+    <p>&copy;2024 Alfabetização¹</p>
+   
+  </footer>
+  <div class="copyright">¹copyright fictício</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
